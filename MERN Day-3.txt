@@ -1,0 +1,189 @@
+console.log(123);
+let a="sece";
+console.log(a);
+
+//Add
+let b=100+20;
+console.log(b);
+
+Infinity
+let c=1/0;
+console.log(c);
+
+NaN
+let d="arj"*0;
+console.log(d);
+
+Concatenation
+let e="arj"+"un";
+console.log(e);
+
+bigint
+let f=100n;
+console.log(typeof(f));
+let a=10;
+let b=40;
+console.log(` The addition of two numbers ${a} and ${b} is ${a+b}`);
+console.log("Add of two numbers ",a+" and ",b+" is ",a+b);
+let a;
+console.log(a);
+
+object=Collection of data
+const student= Object.freeze({
+    name:"Arjun",
+    age:20,
+    phnNo:9750511440,
+    college:"SECE",
+    mail:"arjun@gmail.com",
+}); 
+//inserting,updating and deleting  in the object
+student.school="vvm";
+student.age=21;
+console.log(student);
+delete student.college;
+console.log(student);
+
+//Print values only
+const student= Object.keys({
+    name:"Arjun",
+    age:20,
+    phnNo:9750511440,
+    college:"SECE",
+    mail:"arjun@gmail.com",
+});
+ console.log(student);
+
+ //using for
+ for(const key in student){
+    console.log(key,student[key]);
+ }
+
+ //Mutation
+ const userx={
+    name:"hello",
+    age:30
+ }
+const usery={...userx};//...==spread operator used to clone the object
+usery.age=20;
+console.log(userx,usery);
+
+//Nested Object:
+const details={
+     address:{
+        street:"Kkd",
+        city:"cbe"
+    }
+    //city:"covai"
+}
+console.log(details);
+console.log(details?.address?.city);
+
+//using for:
+for(const key in details){
+    console.log(key,details[key]);
+ }
+
+//Functions:
+function sum(n1,n2){
+    return n1+n2;
+}
+console.log(sum(10,40));
+
+function sum(n1,n2){
+    if(typeof n1!=='number' || typeof n2!=='number'){
+        return "INVALID";
+    }
+    return n1+n2;
+}
+console.log(sum("a",10));
+console.log(sum(10,20));
+
+//Arrow function:
+const add=(n1,n2)=>{return n1+n2}
+console.log(add(10,20));
+
+//Immediately invoking function:
+(function sum(n1,n2){
+    if(typeof n1!=='number' || typeof n2!=='number'){
+        console.log( "INVALID");
+    }
+    console.log(n1+n2);
+})(10,30);
+
+//Nested Functions:
+const add=(n1,n2)=>n1+n2;
+const sub=(n1,n2)=>n1-n2;
+const mul=(n1,n2)=>n1*n2;
+const div=(n1,n2)=>n1/n2;
+const calculator=(n1,n2,operation)=>{
+    return operation(n1,n2);
+}
+console.log(calculator(10,50,add));
+console.log(calculator(10,50,mul));
+console.log(calculator(10,50,div));
+console.log(calculator(10,50,sub));
+
+//String:
+let str1="  Im Arjunan";
+trim
+console.log(str1.trim());
+replace
+str1.replace("j","i");
+console.log(str1);
+
+//Array:
+let arr=[1,2,3,"abcd"];
+console.log(arr);
+//push,pop:
+arr.push(765);
+arr.push("Arjunan");
+console.log(arr);
+console.log(arr.pop());
+arr.push(((n1)=>n1*10)(10));
+console.log(arr);
+for(const key in arr){
+    console.log(key,arr[key]);
+}
+let arr1=[1,2,3,4,5];
+//arr1.push(6,7,8,9,10);
+console.log(arr1);
+let ar=['Arjun','Bharathan','Dhiyanesh','Dinesh','Divyan'];
+console.log(ar);
+console.log(ar.slice(0,2));
+console.log(ar.shift());
+console.log(ar);
+console.log(ar.unshift("Arjun"));
+console.log(ar);
+console.log(ar.splice(3,1,"Deepak","Ajay"));
+console.log(ar);
+console.log(ar.splice(ar.length,0,"Dinesh"));
+console.log(ar);
+
+//String:
+let a="Harish";
+console.log(a.slice(1));
+console.log(a.slice(1,4));
+let stu="I am from SECE";
+console.log(stu.split(""));
+let arr=[1,2,3,4,": I am ","Arjun"];
+console.log(arr.join(''));
+let b="hihecivhivh";
+console.log(b.toUpperCase());
+console.log(stu.toLowerCase());
+
+
+let names = "arjun bharathan dinesh dhiyanesh divyan";
+const words = names.split(" ");
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+}
+console.log(words.join(' '));
+
+let names = "madhu akshaya priya ishwarya saranya";
+const words = names.split(" ");
+const ans=[]
+for (let i = 0; i < words.length; i++) {
+    words[i]=push(words[i][0].toUpperCase() + words[i].slice(1));
+    ans[i].push(words[i]);
+}
+console.log(ans.join(' '));

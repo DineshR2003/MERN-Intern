@@ -1,0 +1,267 @@
+1)What is DBMS?
+	It is used to store the data and files together and manage the data in the database.
+
+
+2)Database Components:
+	>Hardware
+	>Software
+
+3)Architecture:
+	>1 Tier -Direct access
+	>2 Tier -Server(DB) and Client(Application,User)
+	>3 Tier -User|Application|Server
+
+4)RDBMS:
+	Relational Database Management System-used in Common field but Different data.
+	Using tables.
+	Structured Way of storing data
+
+5)Types of DB:
+	1.Distributed -one db consist one table and accessed by others db.(student db)
+	2.Centralized -one db consist many table accessed by other db.
+	3.Relational -known input
+	4.Graph -network-many to many
+	5.NoSQL -
+	6.Cloud -
+
+6)NoSQL DB:
+	UnStructured Db
+	Storing Files,img,doc,etc..,
+
+7)network-graph-many to many-unstructured-nosql 
+  hierarchy-tree-one to many-structured-sql
+	
+8)Components of DBMS:
+>configuring authentication and authorization
+>providing databckups and snapshots
+>query language
+
+9)meta data-data for additional info(info of info,how,what about the data)
+
+10)Model of data:
+>ER model- through structured-pictorial representation-known data-SQL
+>Object based model-improvised structured-unstructured-NoSQL
+>Semistructured data model-both structured and unstructured-MongoDB
+
+10)ER Model
+entity=real tym obj-rect
+attribute=object property-oval
+relationship-rhombus
+
+11)Attributes:
+	Unique:oval
+	composite:underline
+	Derieved:derived from other attributes-dotted
+	multivalued:double oval
+
+12)Entity:
+	Strong Entity:rect
+	Weak Entity:double rect
+
+13)Server:
+	>It executes the request and response to that request when asked
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------SQL:-
+>in table if we consider only one row or column is called tuple.
+
+>>types
+
+>DDL=Data definition language(create,alter,drop,truncate)
+>DML=Data manipulation language(insert,update,delete)
+>DCL=Data control language(grant,revoke)
+>TCL=Transaction Control language(commit,rollback,savepoint)
+>DQL=Data Query Language(select)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------task:
+	>sort a particular col in both ascending and decending order
+	>count
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+===========================================================================================================================================================================
+DAY 2:-
+
+primary key =unique identification
+foreign key=map and fetch using index data.
+
+1)collecions=group of documents
+2)documents=record
+
+MONGO DB:
+>use dbname:
+>show dbs:
+>db:current database
+>db.CollectionName:
+
+--Creation:
+>db.createCollection("Student")
+
+--Display:
+>db.collectionName.findOne();==Display first
+>db.collectionName.find();==Display fully
+>db.Student.find({age:20});-display based on condition
+
+--insert:
+>db.Student.insertOne({Id:1,name:"Arjun",age:20}):Insert one
+>db.Student.insertMany([{},{}]):Insert many
+
+--Update:
+>db.Student.updateOne({name:"Arjun"},{$set : {age:25}});==update one
+>db.Student.updateMany({},{$inc: {age:2}}); ==update many
+>$set=set
+>$inc=increment
+
+--delete:
+>db.Student.deleteOne({name:"Arjun"});
+
+
+
+
+___________________________________________________________________________________________________________________________________________________________________________
+TASk:
+name: 'Swift',
+Model:'DTS',
+Rented_User_count:1,
+Mileage: 18,
+Transmission:'automatic',
+Rent:1300,
+Fuel:'Petrol',
+Image_url:'http://adsasdasd.com'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
